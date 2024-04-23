@@ -25,12 +25,34 @@ function initializeData() {
 
 // TASK: Get elements from the DOM
 const elements = {
-  sideBarDiv: document.getElementById('side-bar-div'),
-  logo: document.getElementById('logo'),
-  boardsNavLinksDiv: document.getElementById('boards-nav-links-div'),
-  switchToggle: document.getElementById('switch'),
-
-}
+    sideBarDiv: document.getElementById('side-bar-div'),
+    logo: document.getElementById('logo'),
+    boardsNavLinksDiv: document.getElementById('boards-nav-links-div'),
+    switchToggle: document.getElementById('switch'),
+    layout: document.getElementById('layout'),
+    header: document.getElementById('header'),
+    headerBoardName: document.getElementById('header-board-name'),
+    addNewTaskBtn: document.getElementById('add-new-task-btn'),
+    editBoardBtn: document.getElementById('edit-board-btn'),
+    deleteBoardBtn: document.getElementById('deleteBoardBtn'),
+    newTaskModalWindow: document.getElementById('new-task-modal-window'),
+    titleInput: document.getElementById('title-input'),
+    descInput: document.getElementById('desc-input'),
+    selectStatus: document.getElementById('select-status'),
+    createTaskBtn: document.getElementById('create-task-btn'),
+    cancelAddTaskBtn: document.getElementById('cancel-add-task-btn'),
+    editTaskModalWindow: document.querySelector('.edit-task-modal-window'),
+    editTaskTitleInput: document.getElementById('edit-task-title-input'),
+    editTaskDescInput: document.getElementById('edit-task-desc-input'),
+    editSelectStatus: document.getElementById('edit-select-status'),
+    saveTaskChangesBtn: document.getElementById('save-task-changes-btn'),
+    cancelEditBtn: document.getElementById('cancel-edit-btn'),
+    deleteTaskBtn: document.getElementById('delete-task-btn'),
+    showSideBarBtn: document.getElementById('show-side-bar-btn'),
+    hideSideBarBtn: document.getElementById('hide-side-bar-btn'),
+    threeDotsIcon: document.getElementById('three-dots-icon'),
+    dropDownIcon: document.getElementById('dropDownIcon'),
+};
 
 let activeBoard = ""
 
