@@ -25,6 +25,10 @@ function initializeData() {
 
 // TASK: Get elements from the DOM
 const elements = {
+  sideBarDiv: document.getElementById('side-bar-div'),
+  logo: document.getElementById('logo'),
+  boardsNavLinksDiv: document.getElementById('boards-nav-links-div'),
+  switchToggle: document.getElementById('switch'),
 
 }
 
@@ -166,8 +170,8 @@ function setupEventListeners() {
   });
 
   // Show sidebar event listener
-  elements.hideSideBarBtn.click() => toggleSidebar(false));
-  elements.showSideBarBtn.click() => toggleSidebar(true));
+  elements.hideSideBarBtn.addEventListener('click', () => toggleSidebar(false));
+  elements.showSideBarBtn.addEventListener('click', () => toggleSidebar(true));
 
   // Theme switch event listener
   elements.themeSwitch.addEventListener('change', toggleTheme);
