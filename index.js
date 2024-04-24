@@ -6,11 +6,9 @@
  * FIX BUGS!!!
  * **********************************************************************************************************************************************/
 
-import {taskFunctions} from './utils/taskFunctions.js';
-
 
 import { initialData } from './initialData.js';
-
+import {taskFunctions} from './utils/taskFunctions.js';
 console.log(initialData);
 
 // Function checks if local storage already has data, if not it loads initialData to localStorage
@@ -224,9 +222,13 @@ function addTask(event) {
   event.preventDefault(); 
 
   //Assign user input to the task object
-    const task = {
-      
-    };
+  const task = {
+    title: elements.titleInput.value,
+    description: elements.descInput.value,
+    status: elements.selectStatus.value,
+    board: activeBoard,
+  };
+
     const newTask = createNewTask(task);
     if (newTask) {
       addTaskToUI(newTask);
